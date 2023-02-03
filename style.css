@@ -1,0 +1,396 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: hsl(120, 75%, 50% / 1);
+  	box-shadow: inset 0 0 5px grey;
+	border-radius: 100vw;
+	margin-block: .5em;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ 	background: gray;
+ 	border-radius: 100vw;
+	margin-block: 0.5em;
+	margin-inline: 1em;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Container-1 */
+.background-1{
+	background: #fff;
+	transition: 0.5s;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: auto;
+}
+
+.container-1{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+}
+
+.container-1 .navbar{
+
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.container-1 nav{
+	flex: 1;
+	text-align: right;
+}
+
+.container-1 nav ul{
+	display: inline-block;
+	list-style-type: none;
+
+}
+
+.container-1 nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+
+}
+
+.container-1 .navbar a:hover{
+	color: red;
+}
+
+.container-1 .navbar a.active{
+	color: red;
+}
+
+.container-1 a{
+	text-decoration: none;
+	color: #555;
+}
+
+.container-1 p{
+	color: #555;
+}
+
+/* Container-2 */
+.background-2 {
+	background: radial-gradient(#fff, #ff6464);
+	padding: 0;
+	margin: 0;
+}
+
+.container-2{
+	max-width: 1300px;
+	margin: auto;
+	padding-top: 125px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+}
+
+.container-2 .row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+.container-2 .col-1{
+	flex-basis: 50%;
+	min-width: 300px;
+
+}
+
+.container-2 .col-1 img{
+	max-width: 100%;
+	padding: 100px 0;
+}
+
+.container-2 .col-1 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+
+.container-2 .col-1 p{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.container-2 .btn{
+	display: inline-block;
+	background: #E70D0D;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: background 0.5;
+}
+
+.container-2 .btn:hover{
+	background: #563434;
+	text-decoration: none;
+}
+
+/* Container-3 */
+.background-3{
+	background-color: #fff;
+}
+
+.container-3{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.container-3 .row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.container-3 .col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+	padding-top: 100px;
+}
+
+.container-3 .col-2 img{
+	max-width: 50%;
+	padding: 50px 0;
+	margin-left: 80px;
+}
+
+.container-3 .col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+	margin-top: -100px;
+}
+
+.container-3 .col-2 p{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.container-3 .col-2 .fa-sharp{
+	font-size: 50px;
+	padding-left: 45%;
+	color: #ff6464;
+}
+
+.col-md-4 {
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-md-4 {
+    width: 33.33333333%;
+  }
+
+.text-center {
+  text-align: center;
+}
+
+/*===========================
+ adding style to about items 
+============================*/
+
+.about-item{
+	margin-top: 180px;
+    margin-bottom: 180px;
+    background-color: white;
+    padding: 100px 30px;
+    box-shadow: 0 0 9px rgba(0,0,0.6);
+}
+
+/*======================================
+adding style to the icons(book,globe,pencil)
+=========================================*/
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+
+/*======================================
+adding style to h3(heading 3) of each item 
+=========================================*/
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*======================================
+styling the hr (the blue line in between)
+=========================================*/
+.about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: #5fbff9;
+    margin: 0 auto;
+    border: none;
+    text-align: left;
+}
+
+
+/*========================================
+hover means when you put your cursor over it
+=========================================*/
+.about-item:hover{
+    background-color: #5fbff9;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+.about-item:hover hr{
+    background-color: #fff;
+}
+
+/*==============================================================================
+translate Y: move along the Y axis, negative(-20) moves it up, while positive(20) moves in down by  
+================================================================================*/
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400ms ease-in-out;
+}
+
+/* Container-4 */
+
+.background-4 {
+	background: #ff6464;	
+}
+
+.container-4 {
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.container-4 .row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.container-4 .col-3{
+	flex-basis: 25%;
+	min-width: 200px;
+	margin-bottom: 150px;
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border-radius: 50px;
+}
+
+.container-4 .small-container h1{
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	font-size: 50px;
+}
+
+.container-4 .small-container .col-3 h4{
+	text-align: center;
+	padding-top: 20px;
+	color: black;
+}
+
+.container-4 .col-3 img{
+	max-width: 70%;
+	padding: 30px 0;
+	margin-left: 50px;
+}
+
+.container-4 .col-3 p{
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.container-4 .col-3 .box-1{
+	background-color: #EAEAEA;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.background-5{
+	background-color: #fff;
+}
+
+.container-5{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.container-5 .row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.container-5 .col-4{
+	flex-basis: 25%;
+	min-width: 200px;
+	margin: 100px;
+}
+
+.container-5 h1{
+	text-align: center;
+	padding-top: 150px;
+	font-size: 50px;
+	margin-bottom: 100px;
+}
+
+.container-5 .col-4 table{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	text-align: left;
+	line-height: 40px;
+	padding: 100px;
+	margin: -200px;
+}
+
+.container-5 .col-4 .box-1{
+	background-color: #EAEAEA;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.container-5 .col-4-1 iframe{
+	padding-left: 100px;
+	max-width: 90%;
+}
